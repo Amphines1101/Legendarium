@@ -1,0 +1,9 @@
+{
+  "name": "nesrine/legendarium",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Legendarium\\": "src/"
+    }
+  }
+}

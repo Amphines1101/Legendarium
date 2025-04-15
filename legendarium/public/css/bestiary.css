@@ -1,0 +1,247 @@
+/* Styles généraux du bestiaire */
+.bestiary-container {
+    margin: auto;
+    padding: 20px;
+}
+
+.bestiary-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 15px;
+}
+
+/* Styles pour la recherche */
+.bestiary-search {
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #3a5982;
+}
+
+/* Styles pour les catégories */
+.bestiary-categories {
+    margin-bottom: 30px;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.category-link {
+    display: block;
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.category-link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Grille de créatures */
+.bestiary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.creature-card {
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.creature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.creature-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.creature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creature-info {
+    padding: 15px;
+}
+
+.creature-name {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.creature-greek-name {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+
+.creature-category {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.creature-details-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4a6fa5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.creature-details-button:hover {
+    background-color: #3a5982;
+}
+
+/* Page de détails de créature */
+.creature-details {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.creature-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.creature-title {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.creature-subtitle {
+    font-size: 1.4rem;
+    color: #666;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.creature-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .creature-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.creature-main-image {
+    grid-column: 1 / -1;
+}
+
+.creature-main-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.creature-info-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.info-table {
+    width: 100%;
+}
+
+.info-table th,
+.info-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.info-table th {
+    width: 40%;
+    color: #555;
+}
+
+.creature-description {
+    grid-column: 1 / -1;
+}
+
+.creature-description h3 {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin: 30px 0;
+}
