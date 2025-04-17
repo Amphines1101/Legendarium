@@ -8,11 +8,9 @@ class UserManager
     private $bdd;
     public function __construct()
     {
-        $this->bdd = new \PDO(
-            'mysql:host=' . HOST . ';port=' . PORT . ';dbname=' . DATABASE . ';charset=utf8;',
-            USER,
-            PASSWORD
-        );
+
+        $this->bdd = new \PDO('mysql:unix_socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock;dbname=' . DATABASE . ';charset=utf8', USER, PASSWORD);
+
         $this->bdd->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     }
 

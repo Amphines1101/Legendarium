@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <div class="creature-details">
-    <a href="/bestiary" class="back-link">« Retour au bestiaire</a>
+    <a href="/" class="back-link">« Retour au bestiaire</a>
     
     <div class="creature-header">
         <h1 class="creature-title"><?= $creature->getName() ?></h1>
