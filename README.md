@@ -15,7 +15,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **PHP**
 - **HTML/CSS**
@@ -24,7 +24,12 @@
 - **Custom MVC Router**
 
 ---
+## Link of Json
+https://github.com/kamiranoff/greek-mythology-data
 
-## Project Structure
+---
 
+## Name of the creator of Json 
+Kevin Amiranoff
+kamiranoff
 
