@@ -11,19 +11,19 @@
 </head>
 <body>
 <header>
-    <nav>
+    <nav class="main-nav">
         <a href="/" class="logo"><i class="fas fa-home"></i></a>
 
-            <?php if (isset($_SESSION['user'])): 
-                echo $_SESSION['user']['pseudo'];
-                ?>
-                <a href="/logout">Logout</a>
-            <?php else: ?>
-                <a href="/login">Login</a>
-            <?php endif; ?>
-            
+        <?php if (isset($_SESSION['user'])): ?>
+            <span class="user-pseudo"><?= htmlspecialchars($_SESSION['user']['pseudo']) ?></span>
+            <a href="/logout">Logout</a>
+        <?php elseif(!isset($_SESSION['user'])): ?>
+            <a href="/login">Login</a>
+            <a href="/register" class="btn-register">S'inscrire</a>
+        <?php endif; ?>
     </nav>
 </header>
+
 
 <main>
     <?php echo $content; ?>
